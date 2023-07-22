@@ -1,0 +1,108 @@
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+body {
+  font-size: 13px;
+  font-family: "Manrope Medium";
+  font-size: 500;
+  background-color: var(--light-grayish-blue);
+}
+/* 'Manrope Medium' - 'Manrope Bold' */
+/* 500, 700 */
+.card {
+  width: 370px;
+  border-radius: 20px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.drawers {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.lower-wrapper {
+  padding: 40px 30px 10px 30px;
+}
+.lower-wrapper h2 {
+  font-family: "Manrope Bold";
+  font-size: 18px;
+  line-height: 1.4;
+  word-spacing: 1px;
+  letter-spacing: .5px;
+  padding-bottom: 20px;
+}
+.lower-wrapper p {
+  font-size: 13px;
+  color: var(--grayish-blue);
+  line-height: 1.6;
+  word-spacing: 1px;
+  letter-spacing: .5px;
+  padding-bottom: 30px;
+}
+.author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.author img:nth-child(1) {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}
+.author-info p {
+  padding: 0;
+}
+.author-info p:nth-child(1) {
+  color: var(--very-dark-grayish-blue);
+  font-family: "Manrope Bold";
+}
+.author img:nth-child(3) {
+  height: 15px;
+  width: 15px;
+  background-color: var(--light-grayish-blue);
+  padding: 11px;
+  border-radius: 50%;
+  z-index: 10000;
+}
+.share {
+  background-color: var(--desaturated-dark-blue);
+  width: 100%;
+  visibility: hidden;
+  color: var(--light-grayish-blue);
+  letter-spacing: 3px;  
+  border-radius: 0 0 20px 20px;  
+  align-items: center;
+  font-size: 12px;
+  font-family: "Manrope Medium";
+  font-weight: 500;
+  padding: 20px 0;
+  margin-top: -68px;
+}
+.share p {
+  padding: 0 40px 0 30px;
+}
+.social-media {
+  padding-right: 80px;
+}
+.social-media img {
+  padding: 0 5px; 
+  width: 20px;
+}
+.share-icon {
+  height: 13px;
+  width: 13px;
+  background-color: var(--grayish-blue);
+  padding: 11px;
+  border-radius: 50%;
+}
+.description-first {
+  opacity: 0;
+}
+/* .description-second {
+  display: flex;
+} */

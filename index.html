@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/typeset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Article Preview Component</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card center">
+      <img class="drawers" src="./assets/images/drawers.jpg" alt="A chest of drawers">
+      <div class="lower-wrapper">
+        <h2>Shift the overall look and feel by <br>adding these wonderful touches <br>to furniture in your home</h2>
+        <p>Ever been in a room and felt like <br>something was missing? Perhaps it felt <br>slightly bare and uninviting. I've got some <br>simple tips to help you make any room feel <br>complete.</p>
+        <div class="author">
+          <img src="./assets/images/avatar-michelle.jpg" alt="Michelle author image">
+          <div class="author-info">
+            <p>Michelle Appleton</p>
+            <p>28 Jun 2020</p>
+          </div>
+          <img onmouseover="MouseOver('1');" onmouseout="MouseOver('0');" src="./assets/images/icon-share.svg" alt="Share This Information" class="item-first">
+        </div>
+      </div>
+      <div class="share">
+        <p>SHARE</p>
+        <div class="social-media description-first">
+          <img src="./assets/images/icon-facebook.svg" alt="Facebook Logo">
+          <img src="./assets/images/icon-twitter.svg" alt="Twitter Logo">
+          <img src="./assets/images/icon-pinterest.svg" alt="Pinterest Logo">
+        </div>
+        <img class="share-icon" src="./assets/images/icon-share-white.svg" alt="Share This Information">
+      </div>
+    </div>
+  </div>
+  <script>
+    function MouseOver(value) {
+      document.getElementsByClassName("description-first")[0].setAttribute("style", "opacity: " + value + ";");
+      // document.getElementsByClassName("author").classList.add("description-second");
+    }
+    // const authors = document.querySelectorAll(".author");
+    // const books = document.querySelectorAll(".book");
+    // function addHoverClass() {
+    //   this.classList.add("result_hover");
+    // }
+    // function removeHoverClass() {
+    //   this.classList.remove("result_hover");
+    // }
+    // authors.forEach((author) => {
+    //   author.addEventListener("mouseenter", addHoverClass);
+    //   author.addEventListener("mouseleave", removeHoverClass);
+    // });
+    // books.forEach((book) => {
+    //   book.addEventListener("mouseenter", addHoverClass);
+    //   book.addEventListener("mouseleave", removeHoverClass);
+    // });
+  </script>
+</body>
+</html>
